@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ShubhamShrii :: Python</title>
+    <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendors/aos/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <link rel="stylesheet" href="assets/css/prism.css">
+        <link rel="stylesheet" href="assets/css/style2.css">
+        <script src="assets/js/prism.js"></script>
+
+
+        <style>
+            body {
+              background-color: #f8f9fa;
+              color: #343a40;
+              transition: background-color 0.3s ease, color 0.3s ease;
+            }
+            .switch {position:relative;display:inline-block;width:60px;height:34px;margin-left:10px;}
+            .switch input {opacity:0;width:0;height:0;}
+            .slider {position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;transition:.4s;border-radius:34px;}
+            .slider:before {position:absolute;height:26px;width:26px;left:4px;bottom:4px;background-color:#fff;transition:.4s;border-radius:50%;}
+            input:checked + .slider {background-color:#2196f3;}
+            input:checked + .slider:before {transform:translateX(26px);content:'';}
+            .slider.round:before {border-radius:50%;}
+            body.dark-mode {background-color:#343a40;color:#f8f9fa;}
+            body.dark-mode .slider {background-color:#f8f9fa;}
+            body.dark-mode .slider:before {background-color:#343a40;}
+            body.dark-mode input:checked + .slider {background-color:#0d6efd;}
+            .custom-switch .custom-control-label::before {
+    display: flex;
+    align-items: center;
+  }
+  .custom-switch .custom-control-label i {
+    margin-right: 5px;
+  }
+          </style>
+</head>
+<body >
+   
+    
+    <div class="shubh-loader"></div>
+    <header class="shubh-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html"><b class="text-warning">ShubhamShrii</b></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#shubhMainNav" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="shubhMainNav">
+                    <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link text-warning" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-warning" href="#" id="blogDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TCS IPA/CPA</a>
+                            <div class="dropdown-menu" aria-labelledby="blogDropdown">
+                                <a class="dropdown-item" href="TCS-Python.html">TCS Python</a>
+                                <a class="dropdown-item" href="TCS-Java.html">TCS JAVA</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-warning" href="#" id="pagesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FAQs</a>
+                            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                                <a class="dropdown-item" href="FAQS.html">TCS 2023</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="dark-mode-toggle">
+                                <label class="custom-control-label d-flex align-items-center" for="dark-mode-toggle">
+                                  <i class="fas fa-moon fa-lg mr-2"></i>
+                                  <span class="text-success"><b>Dark Mode</b></span>
+                                </label>
+                              </div>
+                              <script>document.getElementById("dark-mode-toggle").addEventListener("click",() => document.body.classList.toggle("dark-mode"));</script>
+                        <li class="nav-item">
+                            
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="blog-post">
+        <div class="container">
+            <h1 class="shubh-page-title" data-aos="fade-up"><span class="text-success">OOPs:Scholar Grade</span></h1>
+            
+            <section class="blog-post-featured-img" data-aos="fade-up" data-aos-delay="300">
+                
+            </section>
+            <section class="post-content">
+                <div class="row">
+                    <div class="col-lg-9 mx-auto" data-aos="fade-up">
+                        
+                    </div>
+                </div>
+                
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 mx-auto">
+                        <p data-aos="fade-up"><a href="https://youtu.be/l_yi7g3dHCM"><span class="text-danger">Watch Video on Youtube</span> </a> </p>
+                       
+                       
+                        <p>Create a class Scholar with attributes:</p>
+                        <ul data-aos="fade-up">
+                            
+                            <li><b>ScholarId</b> - Number (representing a unique id for each student)</li>
+                            <li><b>ScholarName </b>- String (represents the name of the student)</li>
+                            <li><b>State</b> - String (representing the state of the student)</li>
+                            <li><b>Marks </b>- List (storing the marks of 3 subjects, obtained marks from each subject is out of​
+                                100)</li>
+                        </ul>
+                           
+                        <blockquote data-aos="fade-up">
+                            <p>Define the __init__ method which takes parameters in the above sequence and sets the​
+
+                                values for attributes.​
+                                
+                                ​
+                                
+                                Create another class ScholarResult with following attribute and methods​
+                                
+                                ScholarGrade - list of dictionaries (It will contain the record for each student which will​
+                                
+                                have ScholarId, ScholarName, TotalMarks, Grade and State)​
+                                
+                                Define the __init__ method which sets the values for above mentioned attribute.​
+                                
+                                Define the methods in the ScholarResult class as below​
+                                
+                                <br><b>1. First method</b> will take the list of Scholar objects and Grade as an input parameters.​
+                                
+                                Firstly, you need to calculate the percentage for each student (based on the marks​
+                                
+                                obtained in 3 subjects).​
+                                
+                                To calculate the percentage use the following formula:​
+                                
+                                <br><b>Percentage = (Subject1Marks + Subject2Marks + Subject3Marks) / 3)​
+                                
+                                Note: Percentage must be an integer value and rounds the value. That means, if​
+                                
+                                Percentage >=40.0% or <40.5% then it will be considered as a 40% and,​
+                                
+                                if percentage >=40.5% or <=41.0% then it will be considered as a 41%.​
+                                
+                                After calculating the percentage, you need to assign the grades as per the following​
+                                
+                                given conditions:​</b>
+                                
+                                ​</p>
+                                <p>
+                                    If student’s percentage >=80, then assign Grade “A”​
+
+If student’s percentage >= 60 and < 80 then assign Grade “B”​
+
+If student’s percentage >= 50 and < 60 then assign Grade “C”​
+
+If student’s percentage <50 then assign Grade “D”​
+
+​
+
+After calculating the grades, make a dictionary which contains ScholarId, ScholarName,​
+
+TotalMarks, Grade and State and append it to the ScholarGrade (list of dictionaries)​
+
+which is an attribute of ScholarResult class.​
+
+Secondly, your method will return the list of dictionaries according to the Grade passed​
+
+as parameter. This list of dictionaries will be sorted based on their TotalMarks in​
+
+descending order.​
+
+<b>For Example:​
+
+[{'ScholarId': 106, 'ScholarName': 'palak', 'TotalMarks': 282, 'Grade': 'A', 'State': 'gujarat'},​
+
+{'ScholarId': 104, 'ScholarName': 'ramesh', 'TotalMarks': 275, 'Grade': 'A', 'State':​
+
+'rajasthan'},​
+
+'ScholarId': 102, 'ScholarName': 'ram', ' TotalMarks': 270, 'Grade': 'A', 'State': 'delhi'}]​</b>
+
+Assumption: No scholars would have same TotalMarks​
+
+Method should return None, in the following cases:​
+
+if search is unsuccessful​
+
+if no records are found, or​
+
+Grade is any other string apart from “A”, “B”, ”C” or “D”
+
+                                </p>
+<p><b>2. Second method</b> will calculate the pass:fail ratio for each state and will return the list​
+
+    of states with pass:fail ratio. This list will be sorted in ascending order based on state's​
+    
+    name.​
+    
+    For example: We have 2 states i.e. delhi and rajasthan. Output would be delhi first and​
+    
+    then rajasthan.​
+    
+    A student who has acquired either Grade “A”, “B” or “C” will be considered as a Pass​
+    
+    and a student with Grade “D” will be considered as a Fail.​
+    
+    ​
+    
+    Formula to calculate the Passing and Failing Percentage:​
+    
+    PassingPercentage = (Number of Scholars Passed / Total Scholars) * 100)​
+    
+    FailingPercentage = (Number of Scholars Failed / Total Scholars) * 100)​
+    
+    Note: Percentage must be an integer value and rounds the value. That means, if​
+    
+    Percentage >=40.0% or <40.5% then it will be considered as a 40% and,​
+    
+    if percentage >=40.5% or <=41.0% then it will be considered as a 41%.​
+    
+    ​
+    
+    For Example-​
+    
+    Your returning list must follow the format as per the below sample example:​
+    
+    ​
+    
+    [['delhi', '60:40'], ['gujarat', '100:0'],['rajasthan', '70:30']]​
+    
+    If no records are found then method should return None.</p>
+    <p>
+        Instructions to write main section of the code:​
+
+1. You would require to write the main section completely, hence please follow the​
+
+below instructions for the same.​
+
+2. You would be required to write the main program which is inline to the "sample input​
+
+description section" mentioned below and to read the data in the same sequence.​
+
+3. Create the respective objects(Scholar and ScholarResult) with the given sequence​
+
+of arguments to fulfill the __init__ method requirement defined in the respective classes​
+
+referring to the below instructions.​
+
+i. Create a list of Scholar Objects.​
+
+To create the list of objects:​
+
+​
+
+a. Read the count of Scholar objects you want to create.​
+
+b. Create a Scholar object after reading the data related to it and add the​
+
+object to the list of Scholar objects which will be provided to the​
+
+ScholarResult object. This point repeats for the number of Scholar​
+
+objects (considered in the first line of input, point #3.i.a) .​
+
+​
+
+4. Read the Grade as an input from the user.​
+
+5. Call the first method which has a list of Scholar’s objects and Grade (either “A”, “B”,​
+
+“C” or “D”) as the arguments and return the list of dictionaries as required.​
+
+Format of the output would be:
+    </p>
+    <p>
+        Format of the output would be:​
+
+“ScholarId ScholarName TotalMarks Grade State” (excluding the quotes).​
+
+If the first method is returning None, then display “No Record Found” (excluding the​
+
+quotes).​
+
+For more clarity please refer the sample testcase.​
+
+6. Call the second method which will return a list of states with pass:fail ratio.​
+
+Format of the output would be:​
+
+“State PassingPercentage:FailingPercentage” (excluding the quotes).​
+
+If the second method is returning None, then display “No Record Found” (excluding the​
+
+quotes).​
+
+For more clarity please refer the sample testcase.​
+
+Note: All the inputs and searches will be case insensitive. Display State and​
+
+ScholarName in the lowercase.
+    </p>
+    <p>
+        Not to be circulated​
+
+You can use/refer the below given sample input and output to verify your solution.​
+
+Input Format:​
+
+1. First input is the integer that reads values for n Scholar objects.​
+
+2. The next set of inputs are ScholarId, ScholarName, State, Subject1Marks,​
+
+Subject2Marks and Subject3Marks.​
+
+3. For each Scholar object repeat point#2 and this point is repeated for n number of​
+
+Scholar objects given in the first line of input.​
+
+4. Last line of input represents a string which is a Grade. It can be either “A”, “B”, “C” or​
+
+“D”.
+    </p>
+    <p>
+        You can consider below sample input and output to verify your implementation before​
+
+submitting.​
+
+<br><b>Sample Input1:​</b>
+
+<br>5​
+
+<br>101​
+
+<br>Tanmay​
+
+<br>delhi​
+
+<br>90​
+
+<br>88​
+
+<br>93​
+
+<br>102​
+
+<br>Sunil​
+
+<br>delhi​
+
+<br>90​
+
+<br>95​
+
+<br>90​
+
+<br>103​
+
+<br>Karvi​
+
+<br>maharashtra​
+
+<br>70​
+
+<br>45​
+
+<br>50
+
+<br>104​
+
+<br>monika​
+
+<br>tamilnadu​
+
+<br>20​
+
+<br>35​
+
+<br>40​
+
+<br>105​
+
+<br>Ram​
+
+<br>tamilnadu​
+
+<br>90​
+
+<br>65​
+
+<br>50​
+
+<br>a
+    </p>
+<p>
+    ​
+
+    <br ><b>Sample Output1:​</b>
+
+    <br>102 sunil 275 A delhi​
+
+    <br>101 tanmay 271 A delhi​
+
+    <br>delhi 100:0​
+
+    <br>maharashtra 100:0​
+
+    <br>tamilnadu 50:50
+</p>
+<div class="container">
+    <ol>
+        <li><b></b>Python Code
+<pre class="language-py"><code>
+class Scholar:
+    def __init__(self, scholar_id, scholar_name, state, marks):
+        self.scholar_id = scholar_id
+        self.scholar_name = scholar_name
+        self.state = state
+        self.marks = marks
+        
+class ScholarGrade:
+    def __init__(self):
+        self.scholar_grade =[]
+        
+    def calculate_grade_return(self, scholar_list, grade):
+        grade_list = ['A', 'B', 'C', 'D']
+        key_list = ['scholar_id', 'scholar_name', 'total_marks', 'grade', 'state']
+        if len(scholar_list) > 0:
+            for i in scholar_list:
+                assign_grade = ''
+                total_marks = sum(i.marks)
+                percentage = int(round(total_marks / 3, 0))
+                if percentage >= 80:
+                    assign_grade = grade_list[0]
+                elif 60 <= percentage < 80:
+                    assign_grade = grade_list[1]
+                elif 50 <= percentage < 60:
+                    assign_grade = grade_list[2]
+                else:
+                    assign_grade = grade_list[3] 
+            
+                student_record_list = [i.scholar_id, i.scholar_name,
+                total_marks, assign_grade, i.state]
+                student_record = dict(zip(key_list, student_record_list))
+                self.scholar_grade.append(student_record)
+            find_scholar = [rec for rec in self.scholar_grade if rec['grade'] == grade]
+            find_scholar = sorted(find_scholar, key=lambda x: (x['total_marks']), reverse=True)
+            return find_scholar
+        else:
+            return None
+        
+    def display_statewise_result(self):
+        if len(self.scholar_grade) == 0:
+            return None
+        else:
+            state_pass_fail_ratio = []
+            states = list(set([each_record['state'] for each_record in self.scholar_grade]))
+            states.sort()
+            for item in states:
+                count_scholars = 0
+                count_fail = 0
+                for each_record in self.scholar_grade:
+                    if each_record['state'] == item:
+                        count_scholars += 1
+                        if each_record['grade'] == 'D':
+                            count_fail += 1
+                fail_percentage = int(round((count_fail / count_scholars) * 100, 0))
+                count_pass = count_scholars - count_fail
+                pass_percentage = int(round((count_pass / count_scholars) * 100, 0))
+                one_state_record = [item, f'{pass_percentage}:{fail_percentage}']
+                state_pass_fail_ratio.append(one_state_record)
+        return state_pass_fail_ratio
+    
+        
+
+scholar_count = int(input())
+scholar_list = []
+for i in range(scholar_count):
+    scholar_id = int(input())
+    scholar_name = input().lower()
+    state = input().lower()
+    sub1_marks = int(input())
+    sub2_marks = int(input())
+    sub3_marks = int(input())
+    marks = [sub1_marks, sub2_marks, sub3_marks]
+    scholar_obj = Scholar(scholar_id, scholar_name, state, marks)
+    scholar_list.append(scholar_obj)
+    
+grade = input().upper()
+scholar_grade_obj = ScholarGrade()
+student_list_with_grade = scholar_grade_obj.calculate_grade_return(scholar_list, grade)
+if student_list_with_grade is None or len(student_list_with_grade) == 0:
+    print("No Record Found")
+else:
+    for record in student_list_with_grade:
+        for k, v in record.items():
+            print(v, end=" ")
+        print()
+pass_fail_ratio_statewise = scholar_grade_obj.display_statewise_result()
+if pass_fail_ratio_statewise is None:
+    print("No Record Found")
+else:
+    for record in pass_fail_ratio_statewise:
+        for item in record:
+            print(item, end=" ")
+        print()
+    
+
+                
+            </ol>
+                
+                    </code></pre>
+                </li> 
+                </div>
+            </section>
+            
+
+
+
+                            <footer class="blockquote-footer">Shubham Shrivas</footer>
+                        </blockquote>
+                       
+                    </div>
+                </div>
+            </section>
+            <div class="row">
+                <div class="col-lg-9 mx-auto">
+                    <section class="related-posts">
+                        <h2 class="section-title mb-4" data-aos="fade-up">Related Videos</h2>
+                        <div class="row">
+                            <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+                                <img src="assets/images/python-course/ds-array.jpg" alt="related post" class="post-thumbnail">
+                                <p class="post-category">TCS IPA</p>
+                                <h5 class="post-title">TCS Xplore IPA | Array-Hands-on-Ques |</h5>
+                                <a href="blog-single_04.html" class="blog-post-link">Learn more</a>
+                            </div>
+                            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                                <img src="assets/images/python-course/ds-string.jpg" alt="related post" class="post-thumbnail">
+                                <p class="post-category">TCS IPA</p>
+                                <h5 class="post-title">TCS Xplore IPA | String-Hands-on-Ques |</h5>
+                                <a href="blog-single_05.html" class="blog-post-link">Learn more</a>
+                            </div>
+                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="100">
+                                <img src="assets/images/python-course/mcqs.jpg" alt="related post" class="post-thumbnail">
+                                <p class="post-category">TCS IPA</p>
+                                <h5 class="post-title">TCS Xplore IPA | MCQs |</h5>
+                                <a href="blog-single_06.html" class="blog-post-link">Learn more</a>
+                            </div>
+                        </div>
+                    </section>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <br>
+    <br>
+    <footer class="shubh-footer" data-aos="fade-up">
+        <div class="container">
+            <div class="row footer-widget-area">
+                <div class="col-md-3">
+                    <a href="index.html" class="footer-brand-wrapper">
+                        <h4>ShubhamShrii</h4>
+                    </a>
+                    <p class="contact-details">shubhamshri6264</p>
+
+                    <nav class="footer-social-links">
+                        <a href="https://www.facebook.com/shubham.shri62"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/shubhamshri_"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/shubhamshrii/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/shubham013333"><i class="fab fa-github"></i></a>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <nav class="footer-nav">
+                        <a href="#!" class="nav-link">TCS IPA</a>
+                        <a href="#!" class="nav-link">Leetcode</a>
+                        <a href="#!" class="nav-link">Python</a>
+                        <a href="#!" class="nav-link">Java</a>
+                        <a href="#!" class="nav-link">Partners</a>
+                        <a href="#!" class="nav-link">Careers</a>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <nav class="footer-nav">
+                        <a href="#!" class="nav-link">FAQ</a>
+                        <a href="#!" class="nav-link">Contact</a>
+                        <a href="#!" class="nav-link">About</a>
+                        <a href="#!" class="nav-link">Support</a>
+                        <a href="#!" class="nav-link">Blog</a>
+                        <a href="#!" class="nav-link">Services</a>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown footer-country-dropdown">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-content">
+                <nav class="nav footer-bottom-nav">
+                    <a href="#!">Privacy & Policy</a>
+                    <a href="#!">Terms</a>
+                    <a href="#!">Site Map</a>
+                </nav>
+                <p class="mb-0">©ShubhamShrii 2023 <a href="#" target="_blank" rel="noopener noreferrer" class="text-reset"></a> . All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/vendors/popper.js/popper.min.js"></script>
+    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/vendors/aos/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+      </script>
+</body>
+
+</html>

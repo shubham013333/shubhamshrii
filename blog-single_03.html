@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ShubhamShrii :: Python</title>
+    <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendors/aos/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <link rel="stylesheet" href="assets/css/prism.css">
+        <link rel="stylesheet" href="assets/css/style2.css">
+        <script src="assets/js/prism.js"></script>
+
+
+        <style>
+           body {
+                  background-color: #f8f9fa;
+                  color: #343a40;
+                  transition: background-color 0.3s ease, color 0.3s ease;
+                }
+                .switch {position:relative;display:inline-block;width:60px;height:34px;margin-left:10px;}
+                .switch input {opacity:0;width:0;height:0;}
+                .slider {position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;transition:.4s;border-radius:34px;}
+                .slider:before {position:absolute;height:26px;width:26px;left:4px;bottom:4px;background-color:#fff;transition:.4s;border-radius:50%;}
+                input:checked + .slider {background-color:#2196f3;}
+                input:checked + .slider:before {transform:translateX(26px);content:'';}
+                .slider.round:before {border-radius:50%;}
+                body.dark-mode {background-color:#343a40;color:#f8f9fa;}
+                body.dark-mode .slider {background-color:#f8f9fa;}
+                body.dark-mode .slider:before {background-color:#343a40;}
+                body.dark-mode input:checked + .slider {background-color:#0d6efd;}
+                .custom-switch .custom-control-label::before {
+        display: flex;
+        align-items: center;
+      }
+      .custom-switch .custom-control-label i {
+        margin-right: 5px;
+      }
+          
+          </style>
+</head>
+<body>
+    <div class="shubh-loader"></div>
+    <header class="shubh-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html"><b class="text-warning">ShubhamShrii</b></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#shubhMainNav" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="shubhMainNav">
+                    <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link text-warning" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-warning" href="#" id="blogDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TCS IPA/CPA</a>
+                            <div class="dropdown-menu" aria-labelledby="blogDropdown">
+                                <a class="dropdown-item" href="TCS-Python.html">TCS Python</a>
+                                <a class="dropdown-item" href="TCS-Java.html">TCS JAVA</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-warning" href="#" id="pagesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FAQs</a>
+                            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                                <a class="dropdown-item" href="FAQS.html">TCS 2023</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="dark-mode-toggle">
+                                <label class="custom-control-label d-flex align-items-center" for="dark-mode-toggle">
+                                  <i class="fas fa-moon fa-lg mr-2"></i>
+                                  <span class="text-success"><b>Dark Mode</b></span>
+                                </label>
+                              </div>
+                              <script>document.getElementById("dark-mode-toggle").addEventListener("click",() => document.body.classList.toggle("dark-mode"));</script>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+   
+
+    <main class="blog-post">
+        <div class="container">
+            <h1 class="shubh-page-title" data-aos="fade-up"><span class="text-success">OOps: Painting</span></h1>
+            <section class="blog-post-featured-img" data-aos="fade-up" data-aos-delay="300">
+            </section>
+            <section class="post-content">
+                <div class="row">
+                    <div class="col-lg-9 mx-auto" data-aos="fade-up">
+                        
+                    </div>
+                </div>
+                
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 mx-auto">
+                        <p><a href="https://youtu.be/rLaR5TjTz10"><b>Watch Video on Youtube</b></a> </p>
+                        <p>Create a class Painting with the below attributes:</p>
+                        <ul data-aos="fade-up">
+                           
+                             <li><b>paintingID</b> - String</li>
+                             <li><b>painterName</b>- String </li>
+                             <li><b>paintingPrice</b> - int</li>
+                             <li><b>painting type</b>- String</li>
+                        </ul>
+                    
+                        <blockquote data-aos="fade-up">
+                            <p>create <b>constructor (__init__ method)</b> which takes all the above attributes in the same sequence.
+                                Method will set the values passed as an argument to the attributes of the Painting object created.
+                                Create a class <b>ShowRoom</b> with the attribute as a list of paintings obtained from the main function.
+                                <br><b>paintingList:</b> of type List of Painting objects.
+                                <br>Define two methods inside <b>ShowRoom</b> class.
+                                <br> <b>getTotalPaintingPrice:</b> It takes a string representing the painting type as argument, and returns the total painting price of the paintings of the given type from the paintingList of the ShowRoom. If no paintings of the given type is present in the list then the method returns None.
+                                <br> <b> getPainterWithMaxCountOfPaintings:</b> It finds the name of the painter from the paintingList of the ShowRoom who has the highest count of Paintings. If more than one painter has the highest count of paintings, the method returns the name of the painter whose name comes first as per the alphabetical orders(A-Z). 
+                                ​</p>
+                            <p>Instructions to write the main function:
+                            <li>You would require to write the main section completely. Hence please follow the below instructions for the same.</li>
+                             <li>You would require to write the main program which is inline to the “sample input description section” mentioned below and to read the data in the same sequence.</li>
+                             <li>Create the respective objects(Painting and ShowRoom) with the given sequence of arguments to fulfill the __init__ method as mentioned in requirements, defined to the respective classes referring to the below instructions.</li>
+                            </p>
+                            <p>
+                                i) Create a list of Painting objects which will be passes as argument while calling the functions in main. To create the list,
+                                <br>a. Read a number for the count of Painting objects to be created and added to the list.
+<br>b. Create a Painting object after reading the data related to it and add the objects to the list to be created. This points repeats for the number of Paintings object to be created(considered in the first line of input) as per point #c.i.a
+<br>ii) Create the ShowRoom object by passing the list created in point #c.i
+                            </p>
+                            <p>
+                                <br> d. Read a value for painting type to be passed as argument to the method getTotalPaintingPrice.
+                                <br>e. Call the method getTotalPaintingPrice by passing the value read in point #d.
+                                <br>f. Call the method getPainterWithMaxCountOfPaintings.
+                                <br>g. Display the value returned by the method getTotalPaintingPrice. If function return None,Then display “Painting not found”(excluding the quotes).
+                                <br>h. Display the value returned by the method getPainterWithMaxCountOfPaintings.
+                                <br>You can use/refer the below-given sample input and output for more details of the format for input and output.
+                                <br>Sample Input description:
+                                <br>a) First line represents the integer value which represents the number of Painting objects.
+                                <br>b) Next lines of input represents one Painting specific data as below one by one in each line.
+                                <br>paintingId
+                                <br>paintingName
+                                <br>paintingPrice
+                                <br>paintingType
+
+                                <br>c) The points #b repeats for the number of objects mentioned in the point #a.
+                                <br>d) The last line of input is the painting type to be passed as argument to the method getTotalPaintingPrice.
+
+                                <br>Consider Case Insensitive for this problem statement.
+                                <br>Consider below sample input and output to verify your implementations:
+                            </p>
+
+<br><b>Sample Input:​</b>
+<br>5
+<br>101
+<br>Raman
+<br>50000
+<br>portrait
+<br>102
+<br>kamaal
+<br>30000
+<br>portrait
+<br>103
+<br>Raman
+<br>25600
+<br>modern
+<br>104
+<br>sumiran
+<br>31000
+<br>landscape
+<br>105
+<br>sumiran
+<br>50000
+<br>Modern
+<br>Modern
+    </p>
+<p>
+    ​
+
+    <br ><b>Sample Output:​</b>
+
+    <br>75600
+    <br>  raman
+
+    
+</p>
+<div class="container">
+    <ol>
+        <li><b> Python Code:</b>
+<pre class="language-py"><code>
+class Painting:
+    def __init__(self,paintingId,paintingName,paintingPrice,paintingType):
+        self.paintingId = paintingId
+        self.paintingName = paintingName
+        self.paintingPrice = paintingPrice
+        self.paintingType = paintingType
+        
+class ShowRoom:
+    def __init__(self,paintingList):
+        self.paintingList = paintingList
+    
+    def getTotalPaintingPrice(self,pType):
+        total = 0
+        for i in self.paintingList:
+            if i.paintingType.lower() == pType.lower():
+                total += i.paintingPrice
+        if total>0:
+            return str(total)
+        else:
+            return 'no arts found'
+                
+        
+    def getPainterWithMaxCountOfPaintings(self):
+        mydict = {}
+        for i in self.paintingList:
+            if i.paintingName not in mydict:
+                mydict[i.paintingName] = 1 
+            else:
+                mydict[i.paintingName]= mydict[i.paintingName] + 1 
+        mx = max(mydict.values())
+        
+        names = []
+        
+        for k in mydict:
+            if mydict[k] == mx:
+                names.append(k)
+        names.sort()
+        
+        if len(names)>0:
+            return names[0]
+            
+        else:
+            return 'no artists found'
+            
+            
+    
+n = int(input())
+
+mylist = []
+
+for i in range(n):
+    paintingId = int(input())
+    paintingName = input()
+    paintingPrice = int(input())
+    paintingType = input()
+    p = Painting(paintingId,paintingName,paintingPrice,paintingType)
+    mylist.append(p)
+    
+s = ShowRoom(mylist)
+
+pType = input()
+print("Output")
+print(s.getTotalPaintingPrice(pType))
+print(s.getPainterWithMaxCountOfPaintings())
+    
+        
+
+
+            
+            </ol>
+                
+                    </code></pre>
+                </li> 
+                </div>
+            </section>
+            
+
+
+
+                            <footer class="blockquote-footer">Shubham Shrivas</footer>
+                        </blockquote>
+                       
+                    </div>
+                </div>
+            </section>
+            <div class="row">
+                <div class="col-lg-9 mx-auto">
+                    <section class="related-posts">
+                        <h2 class="section-title mb-4" data-aos="fade-up">Related Posts</h2>
+                        <div class="row">
+                            <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+                                <img src="assets/images/python-course/ds-array.jpg" alt="related post" class="post-thumbnail">
+                                <p class="post-category">TCS IPA</p>
+                                <h5 class="post-title">TCS Xplore IPA | Array-Hands-on-Ques |</h5>
+                                <a href="blog-single_04.html" class="blog-post-link">Learn more</a>
+                            </div>
+                            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                                <img src="assets/images/python-course/ds-string.jpg" alt="related post" class="post-thumbnail">
+                                <p class="post-category">TCS IPA</p>
+                                <h5 class="post-title">TCS Xplore IPA | String-Hands-on-Ques |</h5>
+                                <a href="blog-single_05.html" class="blog-post-link">Learn more</a>
+                            </div>
+                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="100">
+                                <img src="assets/images/python-course/mcqs.jpg" alt="related post" class="post-thumbnail">
+                                <p class="post-category">TCS IPA</p>
+                                <h5 class="post-title">TCS Xplore IPA | MCQs |</h5>
+                                <a href="blog-single_06.html" class="blog-post-link">Learn more</a>
+                            </div>
+                        </div>
+                    </section>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <br>
+    <br>
+    <footer class="shubh-footer" data-aos="fade-up">
+        <div class="container">
+            <div class="row footer-widget-area">
+                <div class="col-md-3">
+                    <a href="index.html" class="footer-brand-wrapper">
+                        <h4>ShubhamShrii</h4>
+                    </a>
+                    <p class="contact-details">shubhamshri6264</p>
+
+                    <nav class="footer-social-links">
+                        <a href="https://www.facebook.com/shubham.shri62"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/shubhamshri_"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/shubhamshrii/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/shubham013333"><i class="fab fa-github"></i></a>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <nav class="footer-nav">
+                        <a href="#!" class="nav-link">TCS IPA</a>
+                        <a href="#!" class="nav-link">Leetcode</a>
+                        <a href="#!" class="nav-link">Python</a>
+                        <a href="#!" class="nav-link">Java</a>
+                        <a href="#!" class="nav-link">Partners</a>
+                        <a href="#!" class="nav-link">Careers</a>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <nav class="footer-nav">
+                        <a href="#!" class="nav-link">FAQ</a>
+                        <a href="#!" class="nav-link">Contact</a>
+                        <a href="#!" class="nav-link">About</a>
+                        <a href="#!" class="nav-link">Support</a>
+                        <a href="#!" class="nav-link">Blog</a>
+                        <a href="#!" class="nav-link">Services</a>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown footer-country-dropdown">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-content">
+                <nav class="nav footer-bottom-nav">
+                    <a href="#!">Privacy & Policy</a>
+                    <a href="#!">Terms</a>
+                    <a href="#!">Site Map</a>
+                </nav>
+                <p class="mb-0">©ShubhamShrii 2023 <a href="#" target="_blank" rel="noopener noreferrer" class="text-reset"></a> . All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/vendors/popper.js/popper.min.js"></script>
+    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/vendors/aos/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+      </script>
+</body>
+

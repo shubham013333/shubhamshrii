@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>ShubhamShrii :: Python</title>
+        <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
+        <link rel="stylesheet" href="assets/vendors/font-awesome/css/all.min.css">
+        <link rel="stylesheet" href="assets/vendors/aos/aos.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/vendors/jquery/jquery.min.js"></script>
+        <script src="assets/js/loader.js"></script>
+        <link rel="stylesheet" href="assets/css/prism.css">
+            <link rel="stylesheet" href="assets/css/style2.css">
+            <script src="assets/js/prism.js"></script>
+    
+    
+            <style>
+                body {
+                  background-color: #f8f9fa;
+                  color: #343a40;
+                  transition: background-color 0.3s ease, color 0.3s ease;
+                }
+                .switch {position:relative;display:inline-block;width:60px;height:34px;margin-left:10px;}
+                .switch input {opacity:0;width:0;height:0;}
+                .slider {position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;transition:.4s;border-radius:34px;}
+                .slider:before {position:absolute;height:26px;width:26px;left:4px;bottom:4px;background-color:#fff;transition:.4s;border-radius:50%;}
+                input:checked + .slider {background-color:#2196f3;}
+                input:checked + .slider:before {transform:translateX(26px);content:'';}
+                .slider.round:before {border-radius:50%;}
+                body.dark-mode {background-color:#343a40;color:#f8f9fa;}
+                body.dark-mode .slider {background-color:#f8f9fa;}
+                body.dark-mode .slider:before {background-color:#343a40;}
+                body.dark-mode input:checked + .slider {background-color:#0d6efd;}
+                .custom-switch .custom-control-label::before {
+        display: flex;
+        align-items: center;
+      }
+      .custom-switch .custom-control-label i {
+        margin-right: 5px;
+      }
+              </style>
+    </head>
+<body>
+    <div class="shubh-loader"></div>
+    <header class="shubh-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html"><b class="text-warning">ShubhamShrii</b></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#shubhMainNav" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="shubhMainNav">
+                    <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link text-warning" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-warning" href="#" id="blogDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TCS IPA/CPA</a>
+                            <div class="dropdown-menu" aria-labelledby="blogDropdown">
+                                <a class="dropdown-item" href="TCS-Python.html">TCS Python</a>
+                                <a class="dropdown-item" href="TCS-Java.html">TCS JAVA</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-warning" href="#" id="pagesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FAQs</a>
+                            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                                <a class="dropdown-item" href="FAQS.html">TCS 2023</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="dark-mode-toggle">
+                                <label class="custom-control-label d-flex align-items-center" for="dark-mode-toggle">
+                                  <i class="fas fa-moon fa-lg mr-2"></i>
+                                  <span class="text-success"><b>Dark Mode</b></span>
+                                </label>
+                              </div>
+                              <script>document.getElementById("dark-mode-toggle").addEventListener("click",() => document.body.classList.toggle("dark-mode"));</script>
+                        <li class="nav-item">
+                            
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="blog-post">
+        <div class="container">
+            <h1 class="shubh-page-title" data-aos="fade-up"><span class="text-success">OOPS Q: Medicines</span></h1>
+            <section class="blog-post-featured-img" data-aos="fade-up" data-aos-delay="300">
+               
+            </section>
+            <section class="post-content">
+                <div class="row">
+                    <div class="col-lg-9 mx-auto" data-aos="fade-up">
+                        
+                    </div>
+                </div>
+                
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 mx-auto">
+                        <p data-aos="fade-up"><a href="https://youtu.be/AJLnmVEgrzM">Watch Video on Youtube</a> </p>
+                        <p>Create class Medicine with below attributes: </p>
+                        <ul data-aos="fade-up">
+                            
+                             <li><b>MedicineName</b> - String</li>
+                             <li><b>Batch</b>- String </li>
+                             <li><b>State</b> - String </li>
+                             <li><b>Price</b>- Int</li>
+                        </ul>
+                           
+                        <blockquote data-aos="fade-up">
+                            <p>Create class Solution and implement static method <b>"getPriceByDisease"</b> 
+                                in the Solution class. 
+                                This method will take array of Medicine objects and adisease String as parameters.
+                                 And will return another sorted array of Integer objects where 
+                                the disease String matches with the original array of Medicine object's disease 
+                                attribute (case insensitive search).return the Price.
+                                ​</p>
+                            <p>Write necessary getters and setters.
+
+                                Before calling "getPriceByDisease" method in the main method, 
+                                read values for four Medicine objects referring the attributes in 
+                                above sequence along with a String disease.
+                                 Then call the "getPriceByDisease" method and print the result.</p>
+
+<br><b>Sample Input:​</b>
+<br>4
+<br>dolo650
+<br>FAC124W
+<br>fever
+<br>100
+<br>paracetamol
+<br>PAC545B
+<br>bodypain
+<br>150
+<br>almox
+<br>ALM747S
+<br>fever
+<br>200
+<br>aspirin
+<br>ASP849Q
+<br>flu
+<br>250
+<br>fever
+    </p>
+<p>
+    ​
+
+    <br ><b>Sample Output:​</b>
+
+    <br>100
+
+    <br>200
+
+    
+</p>
+<div class="container">
+    <ol>
+        <li><b> Python Code:</b>
+<pre class="language-py"><code>
+class Medicine:
+    def __init__(self, MedicineName, batch, disease, price):
+        self.MedicineName = MedicineName
+        self.batch = batch
+        self.disease = disease
+        self.price = price
+        
+class Solution:
+    @classmethod
+    def getPriceByDisease(cls,list_med, dis):
+        result = []
+        for i in list_med:
+            if i.disease.lower() == dis.lower():
+                result.append(i.price)
+                
+        return result    
+        
+
+n =int(input())
+list_med = []
+
+for i in range(n):
+    MedicineName = input()
+    batch = input()
+    disease = input()
+    price = int(input())
+    
+    list_med.append(Medicine(MedicineName,batch,disease,price))
+    
+dis = input()
+answer = Solution.getPriceByDisease(list_med,dis)
+
+for i in answer:
+    print(i)
+
+            
+            </ol>
+                
+                    </code></pre>
+                </li> 
+                </div>
+            </section>
+            
+
+
+
+                            <footer class="blockquote-footer">Shubham Shrivas</footer>
+                        </blockquote>
+                       
+                    </div>
+                </div>
+            </section>
+            <div class="row">
+                <div class="col-lg-9 mx-auto">
+                    <section class="related-posts">
+                        <h2 class="section-title mb-4" data-aos="fade-up">Related Videos</h2>
+                        <div class="row">
+                            <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+                                <img src="assets/images/python-course/ds-array.jpg" alt="related post" class="post-thumbnail">
+                                <p class="post-category">TCS IPA</p>
+                                <h5 class="post-title">TCS Xplore IPA | Array-Hands-on-Ques |</h5>
+                                <a href="blog-single_04.html" class="blog-post-link">Learn more</a>
+                            </div>
+                            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                                <img src="assets/images/python-course/ds-string.jpg" alt="related post" class="post-thumbnail">
+                                <p class="post-category">TCS IPA</p>
+                                <h5 class="post-title">TCS Xplore IPA | String-Hands-on-Ques |</h5>
+                                <a href="blog-single_05.html" class="blog-post-link">Learn more</a>
+                            </div>
+                            <div class="col-md-4" data-aos="fade-left" data-aos-delay="100">
+                                <img src="assets/images/python-course/mcqs.jpg" alt="related post" class="post-thumbnail">
+                                <p class="post-category">TCS IPA</p>
+                                <h5 class="post-title">TCS Xplore IPA | MCQs |</h5>
+                                <a href="blog-single_06.html" class="blog-post-link">Learn more</a>
+                            </div>
+                        </div>
+                    </section>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <br>
+    <br>
+    <footer class="shubh-footer" data-aos="fade-up">
+        <div class="container">
+            <div class="row footer-widget-area">
+                <div class="col-md-3">
+                    <a href="index.html" class="footer-brand-wrapper">
+                        <h4>ShubhamShrii</h4>
+                    </a>
+                    <p class="contact-details">shubhamshri6264</p>
+
+                    <nav class="footer-social-links">
+                        <a href="https://www.facebook.com/shubham.shri62"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/shubhamshri_"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/shubhamshrii/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/shubham013333"><i class="fab fa-github"></i></a>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <nav class="footer-nav">
+                        <a href="#!" class="nav-link">TCS IPA</a>
+                        <a href="#!" class="nav-link">Leetcode</a>
+                        <a href="#!" class="nav-link">Python</a>
+                        <a href="#!" class="nav-link">Java</a>
+                        <a href="#!" class="nav-link">Partners</a>
+                        <a href="#!" class="nav-link">Careers</a>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <nav class="footer-nav">
+                        <a href="#!" class="nav-link">FAQ</a>
+                        <a href="#!" class="nav-link">Contact</a>
+                        <a href="#!" class="nav-link">About</a>
+                        <a href="#!" class="nav-link">Support</a>
+                        <a href="#!" class="nav-link">Blog</a>
+                        <a href="#!" class="nav-link">Services</a>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown footer-country-dropdown">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-content">
+                <nav class="nav footer-bottom-nav">
+                    <a href="#!">Privacy & Policy</a>
+                    <a href="#!">Terms</a>
+                    <a href="#!">Site Map</a>
+                </nav>
+                <p class="mb-0">©ShubhamShrii 2023 <a href="#" target="_blank" rel="noopener noreferrer" class="text-reset"></a> . All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/vendors/popper.js/popper.min.js"></script>
+    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/vendors/aos/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+      </script>
+</body>
+
+</html>
